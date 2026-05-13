@@ -11,3 +11,10 @@ while opc1 == "si": #Añadimos un ciclo para que el programa se repita hasta que
     for i in range(5): #Añadimos un ciclo para que el usuario ingrese las notas del estudiante
 
         not1=input("Ingrese una nota: ")
+
+        for let1 in not1:
+
+            while let1 not in "0123456789.": #Añadimos validacion para que no se ingresen letras
+                print("No se permiten letras")
+                not1=input("Ingrese nuevamente la nota: ")
+                let1=not1
